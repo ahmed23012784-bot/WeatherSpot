@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body class="my-color">
+    
+    <nav class="navbar navbar-expand-lg p-5" id="nav-id">
+      <div class="container me-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="bi bi-cloud-sun me-2 text-info fs-1 stroked-iconn"></i>
+            <span class="stroked-text text-white fs-3 fw-bolder">
+              Weather
+              <h6 class="my-font">t a g l i n e goes here</h6>
+            </span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
+          <div
+            class="navbar-nav mx-auto d-flex justify-content-center align-items-center ps-5"
+          >
+            <a
+              class="nav-link active mx-3 text-info my-borderr fw-bold rounded-5 stroked-iconn"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-hov rounded-5"
+              href="#"
+              >News</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-bighov rounded-5"
+              href="#"
+              >Live cameras</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-hov rounded-5"
+              href="#"
+              >Photos</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-hov rounded-5"
+              href="#"
+              id="content-nav"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="w-100 my-vh" id="sec-id">
+      <div class="my-background">
+        <div class="p-5 container position-relative">
+          <input
+            type="search"
+            id="Search-id"
+            class="form-control my-color mx-auto border-0 rounded-5 m-4 py-3 text-white"
+            aria-describedby="passwordHelpBlock"
+            placeholder="   search your location..."
+          />
+          <button
+            type="button"
+            class="btn btn-info text-white my-posation translate-middle-y rounded-5 py-2"
+          >
+            search
+          </button>
+        </div>
+        <div class="container" id="id-cards">
+          <div class="card-group py-5">
+            <!-- first day -->
+            <div class="card my-color-2 rounded-bottom-4 pb-2">
+              <div class="d-flex justify-content-between">
+                <h6
+                  class="m-3 text-secondary fw-bolder stroked-iconn"
+                  id="today-Name"
+                >
+                  Saturday
+                </h6>
+
+                <div class="d-flex justify-content-center align-items-center">
+                  <h6
+                    class="mx-1 text-secondary fw-bolder stroked-iconn"
+                    id="today-Number"
+                  >
+                    22
+                  </h6>
+                  <h6
+                    class="mx-1 text-secondary fw-bolder stroked-iconn"
+                    id="month-name"
+                  >
+                    November
+                  </h6>
+                </div>
+              </div>
+              <hr class="text-info fw-bolder bg-black" />
+              <div class="card-body">
+                <h5
+                  class="card-title fw-bold text-secondary fs-3 stroked-iconn"
+                  id="town-id"
+                >
+                  Cairo
+                </h5>
+                <h1
+                  class="card-text text-secondary fw-bolder my-Bigfont mx-3 stroked-iconn"
+                >
+                  <span id="degree-id">25.1</span>
+
+                  <sup class="text-secondary opacity-50">o</sup>
+                  C
+                </h1>
+                   
+
+
+                 <div class="w-25">
+                <img src="./image/176.png" alt="icon-weather-not-found" id="icon-id" class="w-100 h-25 "/>
+                 </div>
+
+                <p class="text-info" id="par-id">Mist</p>
+
+                <i
+                  class="bi bi-umbrella-fill mx-2 text-secondary stroked-iconn"
+                >
+                  <span class="mx-1 fw-bold" id="spana-id"> 20% </span>
+                </i>
+
+                <i class="bi bi-speedometer2 mx-2 text-secondary stroked-iconn">
+                  <span class="mx-1 fw-bold" id="spanb-id"> 18km/h</span>
+                </i>
+
+                <i class="bi bi-compass mx-2 text-secondary stroked-iconn">
+                  <span class="mx-1 fw-bold" id="spanc-id">East</span>
+                </i>
+              </div>
+            </div>
+
+            <!-- second day -->
+
+            <div class="card my-color-3 pb-2 rounded-bottom-4">
+              <h6
+                class="m-3 text-secondary fw-bolder stroked-iconn text-center my-date"
+              >
+                Saturday
+              </h6>
+              <hr class="text-info fw-bolder bg-black" />
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-around"
+              >
+                 <div class="w-25 text-center text-white">
+                    <img
+                  src="./image/176.png"
+                  alt="icon-weather-not-found"
+                  class="icon-second w-100  d-block text-white"
+                />
+                 </div>
+                
+
+                <h1
+                  class="card-text text-secondary fw-bolder fs-1 mx-3 stroked-iconn"
+                >
+                  <span class="max-degree"> 32.5</span>
+                  <sup class="text-secondary opacity-50">o</sup>
+                  C
+                </h1>
+                <h6 class="text-secondary min-degree">21<sup>o</sup></h6>
+                <p class="text-info text-Name">Suuny</p>
+              </div>
+            </div>
+
+            <!-- third day -->
+            <div class="card my-color-2 pb-2 rounded-bottom-4">
+              <h6
+                class="m-3 text-secondary fw-bolder stroked-iconn text-center my-date"
+              >
+                Sunday
+              </h6>
+
+              <hr class="text-info fw-bolder bg-black" />
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-around"
+              >
+
+
+
+                <div class="w-25 text-center text-white">
+                    <img
+                  src="./image/176.png"
+                  alt="not-found"
+                  class="icon-second w-100  d-block text-white "
+                />
+                 </div>
+
+
+                 
+
+                <h1
+                  class="card-text text-secondary fw-bolder fs-1 mx-3 stroked-iconn"
+                >
+                  <span class="max-degree">26</span>
+                  <sup class="text-secondary opacity-50">o</sup>
+                  C
+                </h1>
+                <p class="text-secondary min-degree">18.5<sup>o</sup></p>
+                <p class="text-info text-Name">Partly Cloudy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end page this secttion -->
+    <footer class="my-color-2" id="foot-id">
+      <div class="p-5 container position-relative">
+        <input
+          type="email"
+          id="inputPassword5"
+          class="form-control my-color mx-auto border-0 rounded-5 m-4 py-3 text-white"
+          aria-describedby="passwordHelpBlock"
+          placeholder="Enter your email to subscribe..."
+        />
+        <button
+          type="button"
+          class="btn btn-info text-white my-posation translate-middle-y rounded-5 py-2"
+        >
+          subscribe
+        </button>
+      </div>
+      <p class="text-black stroked-iconn text-center">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </p>
+
+      <div class="footer-inner social fs-3 text-center py-3">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-facebook mx-2"></i>
+        </a>
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          aria-label="Google"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-google mx-2"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          aria-label="LinkedIn"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-linkedin mx-2"></i>
+        </a>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          aria-label="Twitter"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!--content page  -->
+
+    <nav class="navbar navbar-expand-lg p-5 d-none" id="nav2-id">
+      <div class="container me-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="bi bi-cloud-sun me-2 text-info fs-1 stroked-iconn"></i>
+            <span class="stroked-text text-white fs-3 fw-bolder">
+              Company name
+              <h6 class="my-font">t a g l i n e goes here</h6>
+            </span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
+          <div
+            class="navbar-nav mx-auto d-flex justify-content-center align-items-center ps-5"
+          >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-hov rounded-5"
+              href="#"
+              id="Home-id"
+              >Home</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-hov rounded-5"
+              href="#"
+              >News</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-bighov rounded-5"
+              href="#"
+              >Live cameras</a
+            >
+            <a
+              class="nav-link mx-3 text-white fw-bold my-hov rounded-5"
+              href="#"
+              >Photos</a
+            >
+            <a
+              class="nav-link active mx-3 text-info my-borderr fw-bold rounded-5 stroked-iconn"
+              aria-current="page"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="d-none" id="sec2-id">
+      <div class="container">
+        <div
+          class="my-color-2 w-100 py-3 rounded-5 d-flex justify-content-start align-items-center"
+        >
+          <a
+            class="nav-link mx-3 text-white fw-bold my-hov rounded-5 text-secondary stroked-iconn"
+            href="#"
+            id="Home2-id"
+            >Home</a
+          >
+          <i class="bi bi-arrow-right text-secondary"></i>
+          <a
+            class="nav-link mx-3 text-white fw-bold my-hov rounded-5 text-secondary stroked-iconn"
+            href="#"
+            >content</a
+          >
+        </div>
+
+        <div class="row py-5">
+          <div class="col-5">
+            <div class="map-inner my-color-2 my-4 rounded-4">
+              <div style="width: 100%; height: 300px">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27603.042788568135!2d31.23571295!3d30.044419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c57a1f7bb1%3A0x2c4e3ad7c9c04e88!2sDowntown%20Cairo!5e0!3m2!1sar!2seg!4v1700000000000"
+                >
+                </iframe>
+              </div>
+
+              <div class="py-3 text-center">
+                <i class="bi bi-geo-alt text-info mx-5 px-3">
+                  <span class="text-black stroked-iconn"
+                    >:Company Name INC. 2803 Avenue Street, Los Angeles
+                  </span>
+                </i>
+              </div>
+              <hr/class="text-info">
+              <div class="d-flex align-items-start justify-content-around py-4">
+                <i class="bi bi-telephone text-info">
+                  <span class="text-black stroked-iconn"> +1 800 314 235</span>
+                </i>
+                <i class="bi bi-envelope text-info">
+                  <span class="text-black stroked-iconn">
+                    contact@companyname.com
+                  </span>
+                </i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 offset-1">
+            <div class="form-inner">
+              <h1 class="text-info stroked-iconn">Contact us</h1>
+              <p class="lead text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi consectetur inventore ducimus, facilis, numquam id
+                soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                Nisi facilis odit hic, ipsum sed!
+              </p>
+
+              <div class="mb-3">
+                <div
+                  class="d-flex flex-nowrap align-items-center justify-content-between"
+                >
+                  <input
+                    type="text"
+                    id="inputPassword5"
+                    class="form-control my-color-4 my-color mx-1 border-2 border-secondary rounded-5 m-4 py-3 text-white"
+                    aria-describedby="passwordHelpBlock"
+                    placeholder="Enter your Name..."
+                  />
+                  <input
+                    type="email"
+                    id="inputPassword5"
+                    class="form-control my-color-4 my-color mx-1 border-2 border-secondary rounded-5 m-4 py-3 text-white"
+                    aria-describedby="passwordHelpBlock"
+                    placeholder="Email Addresss..."
+                  />
+                </div>
+
+                <div
+                  class="d-flex flex-nowrap align-items-center justify-content-between"
+                >
+                  <input
+                    type="text"
+                    id="inputPassword5"
+                    class="form-control my-color-4 my-color mx-1 border-2 border-secondary rounded-5 m-4 py-3 text-white"
+                    aria-describedby="passwordHelpBlock"
+                    placeholder="Company Name..."
+                  />
+                  <input
+                    type="text"
+                    id="inputPassword5"
+                    class="form-control my-color-4 my-color mx-1 border-2 border-secondary rounded-5 m-4 py-3 text-white"
+                    aria-describedby="passwordHelpBlock"
+                    placeholder="Website..."
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control my-color-4 my-color rounded-5 border-2 border-secondary py-5 text-center text-white"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="message..."
+                ></textarea>
+              </div>
+
+              <div class="mx-auto text-center">
+                <button type="button" class="btn btn-info text-white rounded-4">
+                  Submit Query
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end page this secttion -->
+
+    <footer class="my-color-2 d-none" id="foot2-id">
+      <div class="p-5 container position-relative">
+        <input
+          type="email"
+          id="inputPassword5"
+          class="form-control my-color mx-auto border-0 rounded-5 m-4 py-3 text-white"
+          aria-describedby="passwordHelpBlock"
+          placeholder="Enter your email to subscribe..."
+        />
+        <button
+          type="button"
+          class="btn btn-info text-white my-posation translate-middle-y rounded-5 py-2"
+        >
+          subscribe
+        </button>
+      </div>
+      <p class="text-black stroked-iconn text-center">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </p>
+
+      <div class="footer-inner social fs-3 text-center py-3">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-facebook mx-2"></i>
+        </a>
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          aria-label="Google"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-google mx-2"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          aria-label="LinkedIn"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-linkedin mx-2"></i>
+        </a>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          aria-label="Twitter"
+          class="mx-2 text-decoration-none"
+        >
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
